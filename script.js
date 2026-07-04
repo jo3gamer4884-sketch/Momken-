@@ -10,22 +10,17 @@ const no=document.getElementById("noBtn")
 const song=document.getElementById("loveSong")
 
 const spotify=
-document.getElementById(
-"spotifyBox"
-)
+document.getElementById("spotifyBox")
 
 const nextMessage=
-document.getElementById(
-"nextMessage"
-)
+document.getElementById("nextMessage")
+
 
 spotify.style.display="none"
 
 
 const stopBtn=
-document.createElement(
-"button"
-)
+document.createElement("button")
 
 stopBtn.innerHTML=
 "For another surprise 🎵"
@@ -49,7 +44,8 @@ stopBtn
 
 bouquet.onclick=()=>{
 
-card.style.display="block"
+card.style.display=
+"block"
 
 }
 
@@ -58,9 +54,11 @@ card.style.display="block"
 
 btn.onclick=()=>{
 
-intro.style.display="none"
+intro.style.display=
+"none"
 
-message.style.display="block"
+message.style.display=
+"block"
 
 }
 
@@ -74,7 +72,8 @@ song.play()
 yes.innerHTML=
 "YAYAYAYAYAYA BAHAHAHAHAHA love u ❤️"
 
-no.style.display="none"
+no.style.display=
+"none"
 
 nextMessage.style.display=
 "block"
@@ -85,7 +84,8 @@ stopBtn.style.display=
 }
 
 
-// another surprise button
+
+// another surprise
 
 stopBtn.onclick=()=>{
 
@@ -94,14 +94,53 @@ song.pause()
 song.currentTime=0
 
 
-// close whole card
+// hide card smoothly
+
+card.style.opacity="0"
+
+card.style.transform=
+"scale(.9)"
+
+card.style.pointerEvents=
+"none"
+
+
+setTimeout(()=>{
+
+
 card.style.display=
 "none"
 
 
-// show spotify
 spotify.style.display=
 "block"
+
+
+// EXACT SAME POSITION AS CARD
+
+spotify.style.position=
+"absolute"
+
+spotify.style.top=
+"50%"
+
+spotify.style.left=
+"50%"
+
+spotify.style.transform=
+"translate(-50%,-50%)"
+
+spotify.style.width=
+"90%"
+
+spotify.style.maxWidth=
+"520px"
+
+spotify.style.zIndex=
+"999"
+
+
+},500)
 
 }
 
@@ -117,13 +156,15 @@ card.getBoundingClientRect()
 const btnRect=
 no.getBoundingClientRect()
 
+
 const x=
 Math.random()*
-(cardRect.width-btnRect.width-20)
+(cardRect.width-btnRect.width-70)
 
 const y=
 Math.random()*
-(cardRect.height-btnRect.height-20)
+(cardRect.height-btnRect.height-70)
+
 
 no.style.position=
 "absolute"
@@ -137,6 +178,7 @@ y+"px"
 }
 
 
+
 no.addEventListener(
 "click",
 (e)=>{
@@ -147,6 +189,7 @@ moveButton()
 
 }
 )
+
 
 no.addEventListener(
 "touchstart",
@@ -161,7 +204,7 @@ moveButton()
 
 
 
-// hearts
+// floating hearts
 
 for(let i=0;i<30;i++){
 
