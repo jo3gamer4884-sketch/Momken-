@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 400 400">
+
+<!-- leaves -->
+
+<ellipse
+cx="150"
+cy="200"
+rx="45"
+ry="80"
+fill="#3ab54a"
+transform="rotate(-40 150 200)"/>
+
+<ellipse
+cx="250"
+cy="200"
+rx="45"
+ry="80"
+fill="#3ab54a"
+transform="rotate(40 250 200)"/>
+
+<!-- roses -->
+
+<g>
+
+<circle cx="130" cy="140" r="35" fill="#ff3b6b"/>
+
+<path
+d="M115 135
+Q130 115 145 135
+Q130 150 115 135"
+fill="#d81b60"/>
+
+</g>
+
+<g>
+
+<circle cx="200" cy="110" r="40" fill="#ff3b6b"/>
+
+<path
+d="M180 105
+Q200 85 220 105
+Q200 130 180 105"
+fill="#d81b60"/>
+
+</g>
+
+<g>
+
+<circle cx="270" cy="140" r="35" fill="#ff3b6b"/>
+
+<path
+d="M255 135
+Q270 115 285 135
+Q270 150 255 135"
+fill="#d81b60"/>
+
+</g>
+
+<!-- lilies -->
+
+<g fill="white">
+
+<path d="
+M145 190
+L170 160
+L195 190
+L170 220Z"/>
+
+<path d="
+M220 190
+L245 160
+L270 190
+L245 220Z"/>
+
+</g>
+
+<!-- wrap -->
+
+<polygon
+points="
+100,230
+300,230
+200,360"
+fill="#d6b38b"/>
+
+</svg>
