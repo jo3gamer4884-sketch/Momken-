@@ -85,7 +85,7 @@ stopBtn.style.display=
 }
 
 
-// another surprise
+// another surprise button
 
 stopBtn.onclick=()=>{
 
@@ -93,6 +93,13 @@ song.pause()
 
 song.currentTime=0
 
+
+// close whole card
+card.style.display=
+"none"
+
+
+// show spotify
 spotify.style.display=
 "block"
 
@@ -163,7 +170,8 @@ document.createElement(
 "div"
 )
 
-heart.innerHTML="💖"
+heart.innerHTML=
+"💖"
 
 heart.className=
 "heart"
