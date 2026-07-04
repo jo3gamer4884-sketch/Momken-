@@ -89,7 +89,8 @@ stopBtn.style.display=
 
 stopBtn.onclick=()=>{
 
-
+song.pause()
+song.currentTime=0
 
 // hide card smoothly
 
