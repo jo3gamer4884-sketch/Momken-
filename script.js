@@ -7,7 +7,7 @@ const intro=document.getElementById("intro")
 const yes=document.getElementById("yesBtn")
 const no=document.getElementById("noBtn")
 
-const song=document.getElementById("loveSong")
+const song=document.getElementById("bgSong")
 
 const spotify=
 document.getElementById("spotifyBox")
@@ -89,9 +89,6 @@ stopBtn.style.display=
 
 stopBtn.onclick=()=>{
 
-song.pause()
-
-song.currentTime=0
 
 
 // hide card smoothly
